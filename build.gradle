@@ -1,0 +1,17 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+
+group 'org.alerter'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.5'
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.1'
+}
